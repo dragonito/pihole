@@ -1,17 +1,10 @@
 # ------------------------------------------------------------
-# Robin's Medium Ad & Tracking Blocklist
-# ------------------------------------------------------------
-# Kategorien:
-# - Ad Networks (Vungle, UnityAds, AppLovin)
-# - Attribution (Adjust, AppsFlyer)
-# - Analytics (Amplitude, SafeDK)
-# - Game Telemetry (CenturyGame)
-# - Ad CDNs (InMobi, Smadex, Liftoff)
+# Robin's Pi-hole Blocklist — Medium Classic 2.0
 # ------------------------------------------------------------
 
-# -----------------------
-# AD NETWORKS + MEDIATION
-# -----------------------
+###############################
+# 1. AD NETWORKS (hard block)
+###############################
 logs.ads.vungle.com
 cdn-lb.vungle.com
 webview.unityads.unity3d.com
@@ -21,52 +14,58 @@ scar.unityads.unity3d.com
 configv2.unityads.unity3d.com
 o-iab-notifications.mediation.unity3d.com
 
-# -----------------------
-# AD CONVERSION & ATTRIBUTION
-# -----------------------
-tfpodf.adrevenue.appsflyersdk.com
-appsflyersdk.com
-appsflayer.com
 ms.applovin.com
 ms4.applovin.com
 rt.applovin.com
 sts.applovin.com
 prod-mediate-events.applovin.com
 
+supply.inmobicdn.net
+i.l.inmobicdn.net
+
+impression-europe.liftoff.io
+cdn.liftoff-creatives.io
+
+creatives.smadex.com
+static-content-1.smadex.com
+
+pubads.g.doubleclick.net
+
+###############################
+# 2. ATTRIBUTION / AD TRACKING
+###############################
+tfpodf.adrevenue.appsflyersdk.com
+appsflyersdk.com
 view.adjust.com
 app.adjust.com
 
-# -----------------------
-# ANALYTICS / TELEMETRY
-# -----------------------
-app-analytics-services.com
-region1.app-analytics-services.com
-api2.amplitude.com
-edge.safedk.com
-am.lazybumblebee.com
-
-# -----------------------
-# GAME SDK TELEMETRY
-# -----------------------
+###############################
+# 3. GAME-TELEMETRY (safe block)
+###############################
 ta-collector.centurygame.com
 logagent-wf.centurygame.com
 logagent-wf-1069852758.us-west-2.elb.amazonaws.com
 
-# -----------------------
-# CDN-ADS / STATIC AD CONTENT
-# -----------------------
-creatives.smadex.com
-static-content-1.smadex.com
-supply.inmobicdn.net
-i.l.inmobicdn.net
-impression-europe.liftoff.io
-cdn.liftoff-creatives.io
+###############################
+# 4. ANALYTICS (block ALL except amplitude)
+###############################
+app-analytics-services.com
+region1.app-analytics-services.com
+edge.safedk.com
+am.lazybumblebee.com
 
-# -----------------------
-# GOOGLE ADS / DOUBLECLICK
-# -----------------------
-pubads.g.doubleclick.net
+# amplitude bleibt erlaubt:
+# api2.amplitude.com   <-- NICHT blocken
 
-# ------------------------------------------------------------
-# Ende der Medium Blocklist
-# ------------------------------------------------------------
+###############################
+# 5. WEB-ADS (safe block)
+###############################
+criteo.com
+bidder.criteo.com
+rubiconproject.com
+prebid.rubiconproject.com
+ads.pubmatic.com
+tpubads.pubmatic.com
+teads.tv
+ads.teads.tv
+adform.net
