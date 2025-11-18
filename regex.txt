@@ -1,0 +1,9 @@
+(^|\.)unityads\.unity3d\.com$
+(^|\.)vungle\.com$
+(^|\.)applovin\.com$
+(^|\.)appsflyer(sdk)?\.com$
+(^|\.)adjust\.com$
+(^|\.)inmobi(cdn)?\.net$
+(^|\.)liftoff\.io$
+(^|\.)smadex\.com$
+(^|\.)centurygame\.com$
