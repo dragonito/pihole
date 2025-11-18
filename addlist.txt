@@ -1,30 +1,72 @@
+# ------------------------------------------------------------
+# Robin's Medium Ad & Tracking Blocklist
+# ------------------------------------------------------------
+# Kategorien:
+# - Ad Networks (Vungle, UnityAds, AppLovin)
+# - Attribution (Adjust, AppsFlyer)
+# - Analytics (Amplitude, SafeDK)
+# - Game Telemetry (CenturyGame)
+# - Ad CDNs (InMobi, Smadex, Liftoff)
+# ------------------------------------------------------------
+
+# -----------------------
+# AD NETWORKS + MEDIATION
+# -----------------------
 logs.ads.vungle.com
 cdn-lb.vungle.com
 webview.unityads.unity3d.com
 o-sdk.mediation.unity3d.com
 cdp.cloud.unity3d.com
+scar.unityads.unity3d.com
 configv2.unityads.unity3d.com
+o-iab-notifications.mediation.unity3d.com
 
-app-analytics-services.com
-region1.app-analytics-services.com
-
+# -----------------------
+# AD CONVERSION & ATTRIBUTION
+# -----------------------
 tfpodf.adrevenue.appsflyersdk.com
+appsflyersdk.com
+appsflayer.com
 ms.applovin.com
+ms4.applovin.com
 rt.applovin.com
 sts.applovin.com
 prod-mediate-events.applovin.com
 
 view.adjust.com
+app.adjust.com
 
-edge.safedk.com
-
+# -----------------------
+# ANALYTICS / TELEMETRY
+# -----------------------
+app-analytics-services.com
+region1.app-analytics-services.com
 api2.amplitude.com
+edge.safedk.com
+am.lazybumblebee.com
 
-creatives.smadex.com
-static-content-1.smadex.com
-
-supply.inmobicdn.net
-i.l.inmobicdn.net
-
+# -----------------------
+# GAME SDK TELEMETRY
+# -----------------------
 ta-collector.centurygame.com
 logagent-wf.centurygame.com
+logagent-wf-1069852758.us-west-2.elb.amazonaws.com
+
+# -----------------------
+# CDN-ADS / STATIC AD CONTENT
+# -----------------------
+creatives.smadex.com
+static-content-1.smadex.com
+supply.inmobicdn.net
+i.l.inmobicdn.net
+impression-europe.liftoff.io
+cdn.liftoff-creatives.io
+
+# -----------------------
+# GOOGLE ADS / DOUBLECLICK
+# -----------------------
+pubads.g.doubleclick.net
+
+# ------------------------------------------------------------
+# Ende der Medium Blocklist
+# ------------------------------------------------------------
